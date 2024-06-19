@@ -3,25 +3,16 @@ body {
     background-image: url('');
   }
   
-  header {
-    padding: 20px 0;
-  }
   
-  header .row,
-  footer .row {
-    display: flex;
-    align-items: center;
-  }
+  
+ 
   
   h1 {
     font-weight: 700;
     margin: 0;
   }
   
-  nav {
-    display: flex;
-    justify-content: flex-end;
-  }
+ 
   
   a {
     padding: 0 20px;
@@ -31,7 +22,8 @@ body {
   .jumbotron {
     display: flex;
     align-items: center;
-    background-image: url('/resources/images/jumbo2.jpg');
+    background-image: url('../images/jumbo2.jpg');
+    background-position: center;
     background-size: cover;
     color: #ffffff;
     height: 400px;
@@ -93,6 +85,7 @@ body {
   footer {
     font-size: 12px;
     padding: 20px 0;
+    position: fixed;
   }
   
   footer .col-sm-8 {
