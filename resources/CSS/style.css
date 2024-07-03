@@ -2,6 +2,8 @@ body {
   font-family: Roboto, sans-serif;
   background-color: #222222;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -12,6 +14,7 @@ header .row,
 footer .row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
@@ -54,6 +57,11 @@ a {
 section .row img {
   margin: 0 0 30px;
   width: 100%;
+  transition: transform 0.3s ease;
+}
+
+section .row img:hover {
+  transform: scale(1.07);
 }
 
 .col-md-6 {
