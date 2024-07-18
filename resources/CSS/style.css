@@ -125,3 +125,35 @@ footer ul {
 .copy {
   top: 5px;
 }
+
+@media only screen and  (max-width: 700px) {
+
+  .jumbotron {
+    background-position: center;
+    height: 200px;
+  }
+  
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 2.5em !important;
+    margin-left: 2% !important;
+  }
+
+  h3 {
+    font-size: 1.3em;
+    margin-left: 2% !important;
+  }
+
+ .py-5 {
+   width: 80%;
+ }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 2000px) {}
