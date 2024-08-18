@@ -147,9 +147,19 @@ footer ul {
     margin-left: 2% !important;
   }
 
+  .col-sm-2 {
+    width: 30%;
+  }
+
  .py-5 {
    width: 80%;
  }
+
+ figure img {
+  width: 100%;
+  height: auto;
+}
+
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1000px) {
