@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
   font-family: Roboto, sans-serif;
   background-color: #222222;
@@ -95,7 +96,7 @@ section .row img:hover {
 }
 
 .portrait {
-  width:  350px;
+  width: 350px;
   height: 300px;
 }
 
@@ -126,44 +127,93 @@ footer ul {
   top: 5px;
 }
 
-@media only screen and  (max-width: 700px) {
+/* Experience Section Styles */
+#icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#icons .col-sm-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#icons img {
+  width: 80px; /* Adjust image size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#icons h5 {
+  font-size: 16px; /* Adjust font size as needed */
+  text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 992px) {
+  #icons .col-sm-2 {
+    flex: 1 1 50%; /* 2 items per row for tablets and small screens */
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #icons .col-sm-2 {
+    flex: 1 1 50%; /* 2 items per row for mobile screens */
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #icons .col-sm-2 {
+    flex: 1 1 50%; /* 1 item per row for very small screens */
+    max-width: 80%;
+  }
+  
+  #icons img {
+    width: 60px; /* Smaller images for very small screens */
+  }
+
+  #icons h5 {
+    font-size: 14px; /* Smaller font size for very small screens */
+  }
 
   .jumbotron {
-    background-position: center;
-    height: 200px;
+    height: 300px;
   }
   
-  h1 {
-    font-size: 26px;
+  .jumbotron h2 {
+    font-size: 40px;
   }
-
-  h2 {
-    font-size: 2.5em !important;
-    margin-left: 2% !important;
-  }
-
-  h3 {
-    font-size: 1.3em;
-    margin-left: 2% !important;
-  }
-
-  .col-sm-2 {
-    width: 30%;
-  }
-
- .py-5 {
-   width: 80%;
- }
-
- figure img {
-  width: 100%;
-  height: auto;
-}
-
-}
-
-@media only screen and (min-width: 700px) and (max-width: 1000px) {
   
+  .jumbotron h3 {
+    font-size: 24px;
+  }
+  
+  .col-md-6 {
+    margin: 0;
+  }
+  
+  .btn.btn-primary {
+    padding: 10px 20px;
+  }
+  
+  .btn-secondary {
+    padding: 10px 20px;
+  }
+  
+  footer {
+    font-size: 16px;
+    padding: 10px 0;
+  }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 2000px) {}
+@media only screen and (min-width: 1000px) and (max-width: 2000px) {
+  #icons .col-sm-2 {
+    flex: 1 1 33%; /* 3 items per row for screens between 1000px and 2000px */
+    max-width: 33%; 
+  }
+}
