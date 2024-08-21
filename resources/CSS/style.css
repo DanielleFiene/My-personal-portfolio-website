@@ -233,8 +233,7 @@ p {
     padding: 10px 0;
   }
 
-  @media (max-width: 576px) {
-    footer .row {
+      footer .row {
         display: flex;
         justify-content: center;
     }
@@ -247,8 +246,6 @@ p {
     footer .col-sm-2:not(:last-child) {
         margin-right: 10px;
     }
-}
-
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 2000px) {
