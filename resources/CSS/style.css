@@ -1,4 +1,4 @@
-/* Base Styles */
+
 body {
   font-family: Roboto, sans-serif;
   background-color: #222222;
@@ -165,9 +165,19 @@ footer ul {
     flex: 1 1 50%; /* 2 items per row for mobile screens */
     max-width: 50%;
   }
+p {
+  font-size: 16px !important;
+}
+  figure img {
+  width: 85% !important;
+  height: auto;
+}
 }
 
 @media only screen and (max-width: 576px) {
+
+  overflow-x: hidden;
+  
   #icons .col-sm-2 {
     flex: 1 1 50%; /* 1 item per row for very small screens */
     max-width: 80%;
@@ -192,6 +202,19 @@ footer ul {
   .jumbotron h3 {
     font-size: 24px;
   }
+
+  h2 {
+    margin-left: 20px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  figure img {
+  width: 85% !important;
+  height: auto;
+}
   
   .col-md-6 {
     margin: 0;
